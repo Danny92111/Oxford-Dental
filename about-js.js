@@ -1,0 +1,197 @@
+
+
+var counter = false;
+var counter2 = false;
+var counter4 = false;
+var counter5 = false;
+var counter6 = false;
+
+//Change menu button
+
+document.addEventListener("click", () => {
+	let getMenuCont = document.querySelector("#Picture-of-Menu-Logo");
+
+	if (isMenuOn == false) {
+		getMenuCont.setAttribute("src", "icons/Menu-50-100px/icons8-menu-50.png");
+		getMenuCont.src = "icons/Menu-50-100px/icons8-menu-50.png";
+	}
+	else if (isMenuOn == true) {
+		getMenuCont.setAttribute("src", "icons/Menu-50-100px/icons8-close-window-40.png");
+		getMenuCont.src = "icons/Menu-50-100px/icons8-close-window-40.png";
+	}
+})
+
+ // Toggle Menu 
+
+ let isMenuOn = false
+ $("#Picture-of-Menu-Logo").click(function() {
+   $("#Toggle-menu").fadeToggle("slow");
+   isMenuOn = !isMenuOn;
+   console.log(isMenuOn)
+ })
+
+ // Media query 830px  // Link for footer
+$(document).ready(function(){     
+	$("#Link-from-footer-to-treatments,.Unordered-list-footer-container:nth-child(2) a:first()").click(() => {
+    
+	if ($(window).width() < 830){
+
+		isMenuOn == false ? $("#Toggle-menu").fadeIn("slow") : $("#Toggle-menu").fadeOut("slow");
+		isMenuOn = !isMenuOn;
+		let getMenuCont = document.querySelector("#Picture-of-Menu-Logo");
+    console.log("isclicked")
+	if (isMenuOn == false) {
+		getMenuCont.setAttribute("src", "icons/Menu-50-100px/icons8-menu-50.png");
+		getMenuCont.src = "icons/Menu-50-100px/icons8-menu-50.png";
+	}
+	else if (isMenuOn == true) {
+		getMenuCont.setAttribute("src", "icons/Menu-50-100px/icons8-close-window-40.png");
+		getMenuCont.src = "icons/Menu-50-100px/icons8-close-window-40.png";
+	}
+	}
+	else {
+		console.log("desktop");
+	}
+});
+});
+
+// Treatments-Submenu
+
+$("#Treatments-Submenu").click(function() {
+	$("#Submenu-container").slideToggle("slow");
+})
+$("#Link-for-whitespace").click(function() {
+	$("#Submenu-container").slideUp("slow");
+})
+
+ 
+ // Faq-Submenu
+ $("#Faq-Submenu").click(function() {
+	 $("#Faq-Submenu-container").slideToggle("slow");
+ })
+ $("#Link-for-whitespace").click(function() {
+	$("#Faq-Submenu-container").slideUp("slow");
+})
+ 
+ // Dental-Implants-Submenu
+  
+ $("#Dental-Implants-submenu-title").click(function() {
+	 $("#Dental-Implants-container").slideToggle("slow");
+ })
+  // Orthodontic-Submenu
+  
+$("#Submenu-Orthodontic-title").click(function() {
+	$("#Orthodontic-container").slideToggle("slow");
+})	 
+  
+ 
+ 
+ // onscroll effect on value boxes
+ 
+  
+  $(window).scroll(function() {
+	  var heightTopValueBox = $(".Individual-value-box-and-title").height();
+	  if($(this).scrollTop()>=heightTopValueBox){
+		  $(".Individual-value-box").each(function setAnimation(){
+		  $(this).animate({backgroundSize:"0"},8000,"linear",setAnimation)
+		  })
+	  }
+  })	  
+  
+  $(window).scroll(function() {
+	  var heightTopValueBox = $(".Individual-value-box-and-title").height();
+	  if($(this).scrollTop()>=heightTopValueBox){
+		  $(".motto-for-value-boxes").each(function setAnimation(){
+		  $(this).animate({opacity:"1"},8000,setAnimation)
+		  })
+	  }
+  })	  
+  
+  $(window).scroll(function() {
+	  var heightTopValueBox = $(".Individual-value-box-and-title").height();
+	  if($(this).scrollTop()>=heightTopValueBox){
+		  $(".Individual-value-box").each(function setAnimation(){
+		  $(this).animate({backgroundSize:"120px"},8000,setAnimation)
+		  })
+	  }
+  })	  
+ 
+  $(window).scroll(function() {
+	  var heightTopValueBox = $(".Individual-value-box-and-title").height();
+	  if($(this).scrollTop()>=heightTopValueBox){
+		  $(".motto-for-value-boxes").each(function setAnimation(){
+		  $(this).animate({opacity:"0"},8000,setAnimation)
+		  })
+	  }
+  })
+  
+ 
+
+
+// Smooth scrolling
+
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("#Link-to-All-Treatments").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "a") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});  
+
+// Implement fixed menu 
+
+$(window).scroll(function(){
+    if ($(window).scrollTop() >= 155) {
+        $('#Toggle-menu').addClass('fixed-header');
+    }
+    else {
+        $('#Toggle-menu').removeClass('fixed-header');
+    }
+});
+
+// Implement fixed icons 
+
+$(window).scroll(function(){
+    if ($(window).scrollTop() >= 125) {
+        $('#flex-for-strip-container-desktop-view').css("position","fixed");
+		$('#flex-for-strip-container-desktop-view').css("left","89%");
+		$('#flex-for-strip-container-desktop-view').css("top","0");
+    }
+    else {
+        $('#flex-for-strip-container-desktop-view').css("position","absolute");
+		$('#flex-for-strip-container-desktop-view').css("left","100%");
+		$('#flex-for-strip-container-desktop-view').css("top","170px");
+    }
+});
+
+
+// Alert email message
+
+ $("#Submit-button-booking-form").on('click', function() {
+	 if ($("input[name='name']").val() != "" && $("input[name='email']").val() != "" && $("input[name='telnumber']").val() != "")  {
+	 alert("Thank you ! Your message has been sent");
+	 }
+	 
+ })
+ 
+ //reload from server
+window.onbeforeunload = function(e) {
+  window.location.reload(true);
+};

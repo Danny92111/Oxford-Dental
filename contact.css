@@ -1,0 +1,1459 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%;
+  font-family: acumin-pro, sans-serif;
+}
+body {
+}
+html {
+  scroll-behavior: smooth;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+/* Section with the Toggle Menu */
+#Toggle-menu {
+  background-color: #009fe3;
+  display: table;
+  position: absolute;
+  z-index: 995;
+  width: 100%;
+
+  display: none;
+}
+#Imp-Info {
+  text-transform: initial;
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+#Imp-Info span {
+  font-size: inherit;
+  text-decoration: underline;
+  text-transform: uppercase;
+  color:#009fe3;
+  cursor: pointer;
+}
+}
+#Toggle-menu ul {
+  text-align: center;
+  z-index: 995;
+}
+#Toggle-menu ul li:first-child:hover {
+  color: #009fe3;
+  background-color: white;
+  cursor: pointer;
+  transition: 1s;
+}
+.Elemnts-in-the-Toggle-Menu {
+  font-size: 2rem;
+  color: white;
+  text-align: center;
+  font-weight: 600;
+  display: table;
+  margin: 10px 0 0 32px;
+  line-height: 169%;
+  letter-spacing: 2px;
+  z-index: 995;
+}
+.Elemnts-in-the-Toggle-Menu:hover {
+  color: #009fe3;
+  background-color: white;
+  cursor: pointer;
+  transition: 1s;
+}
+#Submenu-container {
+  display: none;
+}
+.Submenu {
+  font-size: 1.7rem;
+  color: white;
+  text-align: left;
+  font-weight: 500;
+  display: table;
+  margin: 5px 0 5px 32px;
+  letter-spacing: 1px;
+  transition: 0.8s ease-in-out;
+  list-style-type: none;
+  line-height: 180%;
+}
+#Dental-Implants-container {
+  display: none;
+}
+.Submenu-Faq {
+  font-size: 1.7rem;
+  color: white;
+  text-align: left;
+  font-weight: 500;
+  display: table;
+  margin: 5px 0 5px 32px;
+  line-height: 180%;
+  letter-spacing: 1px;
+  transition: 0.8s ease-in-out;
+}
+#Faq-Submenu-container {
+  display: none;
+}
+
+#Faq-Submenu:hover {
+  color: #009fe3;
+  background-color: white;
+  cursor: pointer;
+  transition: 1s;
+}
+.Submenu-Dental-Implants {
+  font-size: 1.7;
+  color: white;
+  text-align: left;
+  font-weight: 500;
+  display: table;
+  margin: 5px 0 5px 32px;
+  line-height: 180%;
+  letter-spacing: 1px;
+  transition: 0.8s ease-in-out;
+}
+#Orthodontic-container {
+  display: none;
+}
+.Submenu-Orthodontic {
+  font-size: 0;
+  color: white;
+  text-align: center;
+  font-weight: 300;
+  display: table;
+  margin: 0 0 0 16px;
+  line-height: 140%;
+  letter-spacing: 1px;
+  transition: 0.8s ease-in-out;
+}
+#Dental-Implants-title {
+  font-size: 0;
+  color: white;
+  text-align: center;
+  font-weight: 300;
+  display: table;
+  margin: 10px 0 0 16px;
+  line-height: 140%;
+  letter-spacing: 1px;
+  transition: 0.8s ease-in-out;
+}
+#Orthodontic-title {
+  font-size: 0;
+  color: white;
+  text-align: center;
+  font-weight: 300;
+  display: table;
+  margin: 10px 0 0 16px;
+  line-height: 140%;
+  letter-spacing: 1px;
+  transition: 0.8s ease-in-out;
+}
+
+#Submenu-treatments-desktop-view {
+  display: none;
+}
+#Submenu-Faq-desktop-view {
+  display: none;
+}
+
+/* Search bar */
+
+.Search-bar-container-active {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 200vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 998;
+  display: none;
+}
+#search-bar {
+  width: 70%;
+  display: block;
+  position: relative;
+  top: 105%;
+  z-index: 999;
+  height: 32px;
+  font-size: 2.2rem;
+  border: 1px solid #009fe3;
+  transition: 1s;
+}
+#Submit-button-search-bar {
+  width: 32px;
+  height: 32px;
+
+  display: inline-block;
+  position: relative;
+  z-index: 999;
+
+  display: inline-block;
+  border: 1px solid #009fe3;
+  padding: 5px;
+}
+
+#Search-bar-container {
+  position: absolute;
+  top: 105%;
+  width: 100%;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.close-button {
+  display: none;
+  margin-left: 9px;
+  font-size: 30px;
+  color: #009fe3;
+  position: relative;
+  z-index: 999;
+}
+#Strip-container-for-desktop {
+  display: none;
+}
+/* Section with the Menu Bar */
+#Desktop-view-header {
+  display: none;
+}
+#Social-media-for-desktop-view {
+  display: block;
+  cursor: pointer;
+}
+#Menu-bar-main-container {
+  width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  position: relative;
+}
+#Menu-bar-main-container p {
+  text-align: right;
+  font-size: 1.1rem;
+  color: #cc912e;
+  margin-left: 20px;
+  margin-right: 20px;
+  letter-spacing: 1px;
+
+  display: none;
+}
+#Menu-bar-without-address {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-top: 25px;
+  margin-bottom: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+#Picture-of-Menu-Logo {
+  width: 30px;
+  height: 30px;
+  margin-left: 5px;
+}
+#Picture-of-Company-Logo {
+  width: 255px;
+  height: 107px;
+}
+.Picture-of-Search-Logo {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  z-index: 999;
+  visibility: hidden;
+}
+/* About us section */
+
+.content {
+  font-size: 2rem;
+  text-align: left;
+  line-height: 160%;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 10px;
+}
+#Main-Title {
+  display: inline-block;
+  height: 50px;
+  font-size: 2rem;
+  text-align: left;
+  letter-spacing: 1.5px;
+  line-height: 160%;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 40px;
+  margin-bottom: 50px;
+  color: #009fe3;
+  font-weight: 800;
+}
+
+.Individual-value-box-and-title {
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+}
+.Individual-value-box {
+  width: 220px;
+  height: 240px;
+  margin-bottom: 50px;
+  position: relative;
+  -webkit-box-shadow: 18px 10px 38px -5px rgba(0, 0, 0, 0.58);
+  -moz-box-shadow: 18px 10px 38px -5px rgba(0, 0, 0, 0.58);
+  box-shadow: 18px 10px 38px -5px rgba(0, 0, 0, 0.58);
+
+  /*animation:About-us-animation 10s infinite;*/
+}
+#INDIVIDUALISM-box {
+  background-image: url("Jezzele files/fwoxforddentalcentrehomepage_mobilemocklayout/ODCValues_Individualism.png");
+  background-size: 120px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#TRUST-box {
+  background-image: url("Jezzele files/fwoxforddentalcentrehomepage_mobilemocklayout/ODCValues_Trust.png");
+  background-size: 120px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#EXPERTISE-box {
+  background-image: url("Jezzele files/fwoxforddentalcentrehomepage_mobilemocklayout/ODCValues_Expertise.png");
+  background-size: 120px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#AESTHETICS-box {
+  background-image: url("odcdocs/ODCValues_Aesthetics.png");
+  background-size: 120px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.Title-of-individual-value {
+  font-size: 1.8rem;
+  color: #009fe3;
+  text-align: center;
+  letter-spacing: 2px;
+  line-height: 150%;
+  font-weight: 700;
+  position: absolute;
+  bottom: 0;
+  margin: 0 auto;
+  padding-bottom: 15px;
+  width: 100%;
+  animation: Individual-value 10s infinite;
+}
+.motto-for-value-boxes {
+  font-size: 1.6rem;
+  text-align: center;
+  padding: 10px;
+  color: black;
+  position: relative;
+  line-height: 150%;
+  letter-spacing: 1px;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0;
+
+  animation: About-us-quote-animation 10s infinite;
+}
+#Meet-the-team-title {
+  display: inline-block;
+  height: 50px;
+  font-size: 1.8rem;
+  text-align: left;
+  letter-spacing: 1.5px;
+  line-height: 160%;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 40px;
+  margin-bottom: 25px;
+  color: #009fe3;
+  font-weight: 500;
+}
+#Book-online-container {
+  display: flex;
+  width: 100%;
+  flex-flow: column nowrap;
+  align-items: space-around;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.Book-online-button {
+  border: 2px solid #009fe3;
+  font-size: 2.7rem;
+  color: #009fe3;
+  text-align: center;
+  width: 210px;
+  display: table;
+  padding: 16px 8px;
+  font-weight: 700;
+  margin: 20px auto;
+}
+#Image-collage-container {
+  width: 100%;
+  height: 400px;
+  background-image: url("Jezzele files/fwoxforddentalcentrehomepage_mobilemocklayout/Collage image 1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+#Main-Title-Our-Mission {
+  display: inline-block;
+  height: auto;
+  font-size: 2rem;
+  text-align: left;
+  letter-spacing: 1.5px;
+  line-height: 160%;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  color: #009fe3;
+  font-weight: 800;
+}
+
+/* Footer Section */
+#footer-container {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: space-between;
+  justify-content: space-between;
+}
+#footer-main-container {
+  background-color: rgba(179, 179, 178, 0.3);
+  width: auto;
+  padding: 0 0 0 20px;
+  margin-top: 40px;
+}
+#copyright-container {
+  font-size: 1.4rem;
+  display: inline;
+  color: #b3b3b2;
+}
+#copyright-icon {
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+  position: relative;
+  top: 5px;
+}
+.Unordered-list-footer-container {
+  list-style-type: none;
+  text-align: left;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  color: #009fe3;
+  margin: 10px 30px 0 0;
+}
+.Unordered-list-footer-container a {
+  display: block;
+  text-decoration: none;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  color: #009fe3;
+  margin: 10px 0;
+}
+
+.Unordered-list-footer-container-title {
+  text-align: left;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  color: #009fe3;
+  margin: 10px 0;
+}
+#second-column-in-footer-section {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: space-between;
+  justify-content: space-around;
+}
+#second-column-in-footer-section div {
+  text-align: center;
+}
+
+.icons-from-footer-section {
+  width: 35px;
+  height: 35px;
+
+  padding: 5px;
+  margin: 0 2px 0 0;
+  cursor: pointer;
+}
+#Link-from-footer-to-treatments {
+  color: inherit;
+  text-decoration: none;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  color: #009fe3;
+  margin: 10px 0;
+  text-align: left;
+  text-decoration: none;
+}
+#Quick-links {
+  font-size: 1.5rem;
+  color: #009fe3;
+  text-decoration: underline;
+  padding-top: 10px;
+}
+#First-2-columns-wrapper {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-content: space-between;
+}
+#All-rights-reserved-container {
+  position: relative;
+  text-align: center;
+}
+.content-Emergency-services {
+  font-size: 2rem;
+  text-align: left;
+  letter-spacing: 1.5px;
+  line-height: 160%;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+.Contact-us-title {
+  font-size: 2rem;
+  color: #cc912e;
+  text-align: center;
+  letter-spacing: 2px;
+  line-height: 150%;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+#Link-to-nervous_patients_page {
+  color: #009fe3;
+  font-size: 2rem;
+  text-align: center;
+  letter-spacing: 1.5px;
+  line-height: 160%;
+}
+/* Contact Section */
+
+#Contact-Image {
+  background-image: url("websitechanges/contact.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 250px;
+}
+/* Online Form */
+#treatment option {
+  font-size: 15px;
+  letter-spacing: 0.5px;
+}
+.form-style-5 {
+  max-width: 500px;
+  padding: 10px 20px;
+  background: #f4f7f8;
+  margin: 10px auto;
+  padding: 20px;
+  background: #f4f7f8;
+  border-radius: 8px;
+}
+.form-style-5 fieldset {
+  border: none;
+}
+.form-style-5 legend {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  letter-spacing: 0.5px;
+}
+.form-style-5 label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 1.5rem;
+  letter-spacing: 0.5px;
+}
+.form-style-5 input::placeholder {
+  color: white;
+  font-weight: 700;
+}
+.form-style-5 textarea::placeholder {
+  color: white;
+  font-weight: 700;
+}
+.form-style-5 input[type="text"],
+.form-style-5 input[type="date"],
+.form-style-5 input[type="datetime"],
+.form-style-5 input[type="email"],
+.form-style-5 input[type="number"],
+.form-style-5 input[type="search"],
+.form-style-5 input[type="time"],
+.form-style-5 input[type="url"],
+.form-style-5 textarea,
+.form-style-5 select {
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  border-radius: 4px;
+  font-size: 15px;
+  margin: 0;
+  outline: 0;
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  background-color: #b3b3b2;
+  -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+  margin-bottom: 30px;
+  border: none;
+  letter-spacing: 0.5px;
+}
+.form-style-5 input[type="text"]:focus,
+.form-style-5 input[type="date"]:focus,
+.form-style-5 input[type="datetime"]:focus,
+.form-style-5 input[type="email"]:focus,
+.form-style-5 input[type="number"]:focus,
+.form-style-5 input[type="search"]:focus,
+.form-style-5 input[type="time"]:focus,
+.form-style-5 input[type="url"]:focus,
+.form-style-5 textarea:focus,
+.form-style-5 select:focus {
+  background: #d2d9dd;
+}
+.form-style-5 select {
+  -webkit-appearance: menulist-button;
+  height: 40px;
+  letter-spacing: 0.5px;
+}
+.form-style-5 .number {
+  background: #009fe3;
+  color: #fff;
+  height: 30px;
+  width: 30px;
+  display: inline-block;
+  font-size: 0.8em;
+  margin-right: 4px;
+  line-height: 30px;
+  text-align: center;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
+  border-radius: 15px 15px 15px 0px;
+  letter-spacing: 0.5px;
+}
+
+.form-style-5 input[type="submit"],
+.form-style-5 input[type="button"] {
+  position: relative;
+  display: block;
+  padding: 19px 39px 18px 39px;
+  color: #fff;
+  margin: 0 auto;
+  background: #b3b3b2;
+  font-size: 18px;
+  text-align: center;
+  font-style: normal;
+  width: 100%;
+  border: 1px solid #b3b3b2;
+  border-width: 1px 1px 3px;
+  margin-bottom: 10px;
+  letter-spacing: 0.5px;
+  cursor: pointer !important;
+}
+#Submit-button-booking-form {
+  cursor: pointer;
+}
+.form-style-5 input[type="submit"]:hover,
+.form-style-5 input[type="button"]:hover {
+}
+/* Online Form */
+
+.link-to-phone-number-emergency {
+  color: #cc912e;
+  font-size: inherit;
+}
+.Contact-us-title {
+  font-size: 1.8rem;
+  text-align: left;
+  letter-spacing: 1.5px;
+  line-height: 160%;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  color: #009fe3;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.content {
+  font-size: 2rem;
+  text-align: left;
+  letter-spacing: 1.5px;
+  line-height: 160%;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+#Name-in-meet-the-team-section {
+  display: block;
+  font-size: 2.2rem;
+  text-align: left;
+  letter-spacing: 1px;
+  line-height: 160%;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 50px;
+  color: #cc912e;
+  font-weight: 600;
+}
+.content-in-meet-the-team-section-gold-left {
+  font-size: 1.7rem;
+  text-align: left;
+  line-height: 160%;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 10px;
+  color: #b3b3b2;
+}
+.content-in-meet-the-team-section-black-left {
+  font-size: 1.5rem;
+  text-align: left;
+  line-height: 160%;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  color: black;
+  width: 80%;
+  letter-spacing: 1.5px;
+}
+.content-in-meet-the-team-section-gold-left-black {
+  font-size: 1.7rem;
+  text-align: left;
+  line-height: 160%;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 10px;
+  color: black;
+}
+#img-of-dr-Bowora {
+  width: 100%;
+  height: 300px;
+  background-image: url("websitechanges/ODC062.jpg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.content-in-meet-the-team-section-gold-left-underline {
+  font-size: 2rem;
+  text-align: left;
+  line-height: 160%;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  color: #cc912e;
+  border-bottom: 2px solid #cc912e;
+  width: 80%;
+  display: block;
+}
+#Cronology-container {
+  margin: 50px 0;
+}
+#Iframe-Map {
+  margin-top: 30px;
+}
+.decreased {
+  font-size: 1.5rem;
+  color: gray;
+  opacity: 0.8;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.arrowsInMenu {
+}
+.arrowsInMenu::after {
+  content: "\f078";
+  font-family: "Font Awesome 5 Free";
+  color: white;
+  font-weight: 600;
+  padding: 4px;
+}
+#Link-to-map-google {
+  position: relative;
+}
+#Anchor-Tag-Link-to-Google-Maps {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  z-index: 998;
+}
+#Complaints-section {
+  margin: 20px 0;
+}
+#Complaints-section a {
+  color: #009fe3;
+  font-size: inherit;
+}
+#Emergency-icon-cont {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+#Emergency-icon-cont img {
+  display: block;
+  width: 36px;
+}
+/* ------------------------------------------------------------------------------------------------- */
+@media screen and (min-width: 830px) {
+  #Toggle-menu {
+    background-color: #009fe3;
+    display: table;
+    position: absolute;
+    z-index: 999;
+    width: 100%;
+    margin-top: -110px;
+    height: 60px;
+  }
+  #Toggle-menu ul {
+    text-align: center;
+    z-index: 999;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    padding: 0 15px;
+  }
+  #Toggle-menu ul li:first-child:hover {
+    color: #009fe3;
+    background-color: white;
+    cursor: pointer;
+    transition: 1s;
+  }
+  .Elemnts-in-the-Toggle-Menu {
+    font-size: 1.6rem;
+    color: white;
+    text-align: center;
+    font-weight: 600;
+    display: table;
+    margin: 10px 35px 0 0;
+    line-height: 169%;
+    letter-spacing: 2px;
+    z-index: 995;
+  }
+  .Elemnts-in-the-Toggle-Menu:hover {
+    color: #009fe3;
+    background-color: white;
+    cursor: pointer;
+    transition: 1s;
+  }
+  #Submenu-container {
+    display: none;
+    position: absolute;
+    background-color: #009fe3;
+    margin-top: 10px;
+  }
+  .Submenu {
+    font-size: 1.3rem;
+    color: white;
+    text-align: left;
+    font-weight: 500;
+    display: table;
+    margin: 10px 10px 10px 15px;
+    letter-spacing: 1px;
+    transition: 0.8s ease-in-out;
+    list-style-type: none;
+    line-height: 190%;
+  }
+  #Dental-Implants-submenu-title {
+    cursor: pointer;
+    font-size: 1.3rem;
+    color: white;
+    text-align: left;
+    font-weight: 500;
+    display: table;
+    margin: 10px 10px 10px 15px;
+    letter-spacing: 1px;
+    transition: 0.8s ease-in-out;
+    list-style-type: none;
+    line-height: 190%;
+  }
+  #Submenu-Orthodontic-title {
+    cursor: pointer;
+    font-size: 1.3rem;
+    color: white;
+    text-align: left;
+    font-weight: 500;
+    display: table;
+    margin: 10px 10px 10px 15px;
+    letter-spacing: 1px;
+    transition: 0.8s ease-in-out;
+    list-style-type: none;
+    line-height: 190%;
+  }
+  .Submenu:hover {
+    text-decoration: underline;
+  }
+  #Dental-Implants-container {
+    display: none;
+  }
+  .Submenu-Faq {
+    font-size: 1.3rem;
+    color: white;
+    text-align: left;
+    font-weight: 500;
+    display: table;
+    margin: 10px 10px 10px 15px;
+    letter-spacing: 1px;
+    transition: 0.8s ease-in-out;
+    list-style-type: none;
+    line-height: 190%;
+  }
+  .Submenu-Faq:hover {
+    text-decoration: underline;
+  }
+  #Faq-Submenu-container {
+    display: none;
+    position: absolute;
+    background-color: #009fe3;
+    margin-top: 10px;
+  }
+
+  #Faq-Submenu:hover {
+    color: #009fe3;
+    background-color: white;
+    cursor: pointer;
+    transition: 1s;
+  }
+  .Submenu-Dental-Implants {
+    font-size: 1.7;
+    color: white;
+    text-align: left;
+    font-weight: 500;
+    display: table;
+    margin: 5px 0 5px 0;
+    line-height: 180%;
+    letter-spacing: 1px;
+    transition: 0.8s ease-in-out;
+  }
+  #Orthodontic-container {
+    display: none;
+  }
+  .Submenu-Orthodontic {
+    font-size: 0;
+    color: white;
+    text-align: center;
+    font-weight: 300;
+    display: table;
+    margin: 0 0 0 0;
+    line-height: 140%;
+    letter-spacing: 1px;
+    transition: 0.8s ease-in-out;
+  }
+  #Dental-Implants-title {
+    font-size: 0;
+    color: white;
+    text-align: center;
+    font-weight: 300;
+    display: table;
+    margin: 10px 0 0 0;
+    line-height: 140%;
+    letter-spacing: 1px;
+    transition: 0.8s ease-in-out;
+  }
+  #Orthodontic-title {
+    font-size: 0;
+    color: white;
+    text-align: center;
+    font-weight: 300;
+    display: table;
+    margin: 10px 0 0 0;
+    line-height: 140%;
+    letter-spacing: 1px;
+    transition: 0.8s ease-in-out;
+  }
+
+  #Submenu-treatments-desktop-view {
+    display: none;
+  }
+  #Submenu-Faq-desktop-view {
+    display: none;
+  }
+
+  /* Section with the Menu Bar */
+  #Desktop-view-header {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  #Social-media-for-desktop-view {
+    display: inline;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+  }
+  #picture-of-search-logo-desktop-view {
+    display: none;
+    margin-left: 60px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+  }
+  #Social-media-for-desktop-view img {
+    width: 50px;
+    height: 50px;
+  }
+  #Menu-bar-without-address {
+    width: 100%;
+    display: block;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 130px;
+    padding-left: 40px;
+    padding-right: 0px;
+  }
+
+  #Menu-bar-main-container p {
+    font-size: 1.7rem;
+    letter-spacing: 2px;
+    z-index: 995;
+    position: relative;
+  }
+
+  #Picture-of-Menu-Logo {
+    width: 60px;
+    height: 60px;
+    display: none;
+  }
+  #Picture-of-Company-Logo {
+    width: 386px;
+    height: 112px;
+  }
+  .Picture-of-Search-Logo {
+    width: 60px;
+    height: 60px;
+    display: none;
+  }
+  /* Image from about us pge */
+  #Contact-Image {
+    background-image: url("websitechanges/contact.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 80%;
+    height: 350px;
+    position: relative;
+    left: 10%;
+    margin-top: -20px;
+  }
+  /* Footer Section */
+  #footer-container {
+    justify-content: space-between;
+  }
+  .Unordered-list-footer-container {
+    font-size: 2.2rem;
+    letter-spacing: 1.5px;
+    margin-right: 50px;
+  }
+  .Unordered-list-footer-container a {
+    font-size: 2.2rem;
+    letter-spacing: 1.5px;
+    margin-bottom: 20px;
+    text-decoration: none;
+  }
+
+  #second-column-in-footer-section {
+    flex-flow: column nowrap;
+    align-items: flex-end;
+    justify-content: space-around;
+  }
+
+  .icons-from-footer-section {
+    width: 50px;
+    height: 50px;
+    margin: 10px 20px 20px 0;
+  }
+  #Link-from-footer-to-treatments {
+    font-size: 2.2rem;
+    letter-spacing: 1.5px;
+    margin-bottom: 20px;
+  }
+  #copyright-container {
+    font-size: 1.8rem;
+    display: inline;
+    color: #b3b3b2;
+  }
+  #wrapper-with-social-icons-footer-fb-insta {
+    margin-right: 60px;
+  }
+  #Quick-links {
+    font-size: 2.4rem;
+    text-decoration: underline;
+  }
+  #picture-of-search-logo-desktop-view {
+    position: absolute;
+    display: block;
+    margin-left: 0;
+    width: 70px;
+    height: 70px;
+    margin-left: -85px;
+    top: 145px;
+    display: none;
+  }
+
+  #Social-media-for-desktop-view img {
+    display: none;
+    width: 50px;
+    height: 50px;
+    padding-left: 2%;
+  }
+  #Toggle-menu ul {
+    text-align: center;
+    z-index: 999;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: space-between;
+    width: 90%;
+    position: relative;
+    height: 50px;
+    padding: 0 15px;
+  }
+  #Toggle-menu ul li {
+    font-size: 1.8rem;
+    margin-right: 0;
+  }
+  #Menu-bar-main-container p {
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    z-index: 995;
+    position: absolute;
+    left: 60%;
+  }
+  #Desktop-view-header {
+    margin-left: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  #Picture-of-Company-Logo {
+    width: 434px;
+    height: 183px;
+    position: relative;
+    transform: translateX(-10%);
+  }
+  #Toggle-menu {
+    background-color: #009fe3;
+    display: table;
+    position: absolute;
+    z-index: 999;
+    width: 100%;
+    margin-top: -90px;
+    height: 60px;
+  }
+  #Strip-container-for-desktop {
+    display: block;
+  }
+  #flex-for-strip-container-desktop-view {
+    display: none;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    /* background-color:rgba(0,159,227,0.4); */
+
+    border-radius: 10px;
+    position: -webkit-absolute;
+    position: absolute;
+    right: 0;
+    top: 170px;
+    left: 100%;
+    float: left;
+    z-index: 999;
+
+    padding-bottom: 10px;
+    width: 6%;
+  }
+  #Strip-container-for-desktop img {
+    width: 80px;
+    height: 80px;
+    padding: 15px;
+    margin: 5px;
+  }
+  #First-icon-in-strip-container-desktop-view {
+    margin-top: -10px !important;
+  }
+  #footer-container {
+    justify-content: space-between;
+    width: 80%;
+    position: relative;
+    left: 10%;
+  }
+  #Quick-links {
+    width: 80%;
+    position: relative;
+    left: 10%;
+    font-size: 2.2rem;
+    letter-spacing: 1.5px;
+    text-decoration: underline;
+    padding-top: 20px;
+  }
+  #First-2-columns-wrapper {
+    width: 50%;
+  }
+  #second-column-in-footer-section {
+    width: 50%;
+  }
+  #All-rights-reserved-container {
+    position: relative;
+    text-align: center;
+  }
+  #wrapper-with-social-icons-footer-fb-insta {
+    margin-right: 80px;
+  }
+  #footer-main-container {
+    background-color: rgba(179, 179, 178, 0.3);
+    width: auto;
+    padding: 0 0 0 20px;
+    margin-top: 110px;
+  }
+  /* Image from about us pge */
+  #Contact-Image {
+    background-image: url("websitechanges/contact.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 60%;
+    height: 400px;
+    position: relative;
+    left: 20%;
+  }
+  /* formatting the values from about us for desktop view */
+
+  #Main-Title {
+    display: inline-block;
+    height: 50px;
+    font-size: 2rem;
+    text-align: left;
+    letter-spacing: 1.5px;
+    line-height: 160%;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    color: #009fe3;
+    font-weight: 800;
+
+    width: 80%;
+    left: 10%;
+    position: relative;
+  }
+  #values-wrapper-flex {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    left: 10%;
+    position: relative;
+  }
+  .Individual-value-box-and-title {
+    width: 50%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .Individual-value-box {
+    width: 100%;
+    height: 440px;
+    margin-bottom: 50px;
+    position: relative;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+  }
+  #INDIVIDUALISM-box {
+    background-image: url("Jezzele files/fwoxforddentalcentrehomepage_mobilemocklayout/ODCValues_Individualism.png");
+    background-size: 120px;
+    background-position: top;
+    background-repeat: no-repeat;
+  }
+  #TRUST-box {
+    background-image: url("Jezzele files/fwoxforddentalcentrehomepage_mobilemocklayout/ODCValues_Trust.png");
+    background-size: 120px;
+    background-position: top;
+    background-repeat: no-repeat;
+  }
+  #EXPERTISE-box {
+    background-image: url("Jezzele files/fwoxforddentalcentrehomepage_mobilemocklayout/ODCValues_Expertise.png");
+    background-size: 120px;
+    background-position: top;
+    background-repeat: no-repeat;
+  }
+  #AESTHETICS-box {
+    background-image: url("odcdocs/ODCValues_Aesthetics.png");
+    background-size: 120px;
+    background-position: top;
+    background-repeat: no-repeat;
+  }
+
+  .Title-of-individual-value {
+    font-size: 2.2rem;
+    color: #009fe3;
+    text-align: center;
+    letter-spacing: 2px;
+    line-height: 150%;
+    font-weight: 700;
+    position: absolute;
+    top: 150px;
+    margin: 0 auto;
+    padding-bottom: 15px;
+    width: 100%;
+    animation: Individual-value 10s infinite;
+  }
+  .motto-for-value-boxes {
+    font-size: 1.9rem;
+    text-align: center;
+    padding: 10px;
+    color: black;
+    position: relative;
+    line-height: 150%;
+    letter-spacing: 1px;
+    top: 250px;
+    margin-top: 5px;
+
+    opacity: 1 !important;
+
+    animation: About-us-quote-animation 10s infinite;
+  }
+  #Book-online-container {
+    display: flex;
+    width: 100%;
+    flex-flow: row nowrap;
+    align-items: space-around;
+    margin-top: 80px;
+    margin-bottom: 30px;
+  }
+  #Main-Title-Our-Mission {
+    width: 80%;
+    left: 10%;
+    position: relative;
+  }
+  .content {
+    width: 80%;
+    left: 10%;
+    position: relative;
+    font-size: 1.9rem;
+    width: 60%;
+    position: relative;
+    left: 20%;
+    letter-spacing: 1.5px;
+    line-height: 160%;
+  }
+  #Name-in-meet-the-team-section {
+    width: 80%;
+    left: 10%;
+    position: relative;
+  }
+  .content-in-meet-the-team-section-gold-left {
+    width: 80%;
+    left: 10%;
+    position: relative;
+  }
+  .content-in-meet-the-team-section-black-left {
+    width: 80%;
+    left: 10%;
+    position: relative;
+  }
+  #Cronology-container {
+    width: 80%;
+    left: 10%;
+    position: relative;
+  }
+  .margin-none {
+    left: 0;
+  }
+  .Contact-us-title {
+    width: 60%;
+    left: 20%;
+    position: relative;
+  }
+  iframe {
+    width: 60%;
+    left: 20%;
+    position: relative;
+    height: 450px;
+  }
+  .form-style-5 {
+    max-width: 700px;
+    padding: 10px 20px;
+    background: #f4f7f8;
+    margin: 10px auto;
+    padding: 20px;
+    background: #f4f7f8;
+    border-radius: 8px;
+  }
+  .Treatment-Titles {
+    font-size: 3rem;
+    text-align: left;
+    letter-spacing: 2px;
+    line-height: 150%;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    color: #009fe3;
+    font-weight: 700;
+    width: 100%;
+  }
+  #Emergency-icon-cont {
+    display: block;
+  }
+}
+@media screen and (min-width: 1216px) {
+  body {
+    left: 10%;
+    position: relative;
+    width: 80%;
+    max-width: 100%;
+  }
+  .fixed-header {
+    position: fixed !important;
+    width: 80% !important;
+    margin-top: 0 !important;
+    top: 0;
+    left: 10%;
+  }
+  #Toggle-menu ul {
+    width: 80%;
+    left: 10%;
+  }
+  #flex-for-strip-container-desktop-view {
+    display: flex;
+  }
+
+  .decreased {
+    font-size: 1.5rem;
+    color: gray;
+    opacity: 0.8;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  #Complaints-section {
+    margin-top: 40px;
+  }
+  #Emergency-icon-cont {
+    display: block;
+  }
+}
